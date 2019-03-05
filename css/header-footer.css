@@ -1,0 +1,141 @@
+body {
+  position: relative;
+}
+.header {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
+  padding: .2rem 0;
+  color: #fff;
+  z-index: 2147483647;
+  display: flex;
+  justify-content: space-between;
+}
+.header a {
+  color: #fff;
+}
+.PC {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.logo a {
+  display: flex;
+  justify-content: space-between;
+  line-height: .65rem;
+}
+.logo-img {
+  margin-right: .1rem;
+  width: .65rem;
+  height: .65rem;
+  background: url(../images/login.png) no-repeat;
+  background-size: 100%,100%;
+}
+/*.logo-img img{
+  width: 65px;
+  height: 65px;
+}*/
+.header-list {
+  width: 50%;
+}
+.list-ul {
+  display: flex;
+  justify-content: space-around;
+  line-height: .65rem;
+}
+.list-ul a {
+  display: inline-block;
+  width: 1rem;
+  text-align: center;
+}
+.items:hover .items-list {
+  display: block;
+}
+.items-list {
+  display: none;
+  line-height: .3rem;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.items-list a:hover {
+  color: #00A0E9;
+}
+.footer .footer-bottom {
+  padding: 10px 0;
+  background-color: #1c1e2c;
+  color: #fff;
+  text-align: center;
+  line-height: .3rem;
+  font-size: .12rem;
+}
+.footer .footer-bottom a {
+  color: #fff;
+}
+@media screen and (min-width: 1000px) {
+  .header.wrap {
+    width: 970px;
+  }
+}
+@media screen and (min-width: 1250px) {
+  .header.wrap {
+    width: 1200px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .header {
+    position: static;
+    top: 0;
+    left: 0;
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+    padding: .2rem 0;
+    display: block;
+    justify-content: flex-start;
+    z-index: 2147483647;
+  }
+  .header .header-pitch-on {
+    border-bottom: 1px solid #0b8fff;
+  }
+  .header .logo {
+    padding: 0 .2rem;
+  }
+  .header .logo a {
+    justify-content: flex-start;
+  }
+  .header .logo .logo-img {
+    width: .8rem;
+    height: .8rem;
+    background: url(../images/icon_03.png) no-repeat;
+    background-size: 100%,100%;
+  }
+  .header .logo div {
+    color: #0039ff;
+    font-weight: bold;
+    font-size: .30rem;
+  }
+  .header .header-list {
+    margin-top: .1rem;
+    width: 100%;
+  }
+  .header .header-list .list-ul {
+    border-bottom: 1px solid #ccc;
+  }
+  .header .header-list .list-ul a {
+    width: auto;
+    color: #a3a3a3;
+  }
+  .footer .footer-bottom {
+    padding: .2rem !important;
+    background-color: #444343;
+  }
+}
+@media only screen and (max-width: 350px) {
+  .header .header-list .list-ul {
+    line-height: .4rem;
+  }
+  .header .header-list .list-ul a {
+    font-size: .26rem;
+    color: #464545;
+  }
+}

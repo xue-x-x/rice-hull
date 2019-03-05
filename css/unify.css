@@ -19,8 +19,7 @@ time, mark, audio, video {
     vertical-align: baseline;
 }
 *{
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 /* HTML5 display-role reset for older browsers */
@@ -140,11 +139,13 @@ a:hover, a:active {
     height: 100vh;
 }
 .title{
-    text-align: center;
+    text-align: left;
+    font-size: .33rem;
+     line-height: .8rem;
 }
 
 
-.img-list img{
+img{
     display: block;
     width: 100%;
 }
@@ -162,7 +163,9 @@ a:hover, a:active {
     .wrap{width: 970px;}
 }
 @media screen and (min-width: 1250px) {
-    .wrap{width: 1200px;}
+    .wrap{
+        width: 1200px;
+    }
 }
 
 @media screen and (max-width:1366px){
@@ -181,4 +184,19 @@ a:hover, a:active {
     body{
          width: 100%;
     }
+    .wrap{
+        width: 100%;
+        /*padding: .2rem .2rem 0 .2rem !important;*/
+    }
+    .fs_16{font-size:0.18rem;}
+    .fs_18{font-size:0.24rem;}
+    .fs_20{font-size:0.22rem;}
+    .fs_24{font-size:0.26rem;}
+    .fs_26{font-size:0.28rem;}
+    .fs_28{font-size:0.30rem;}
+    .fs_30{font-size:0.32rem;}
+    .fs_36{font-size:0.38rem;}
+    .fs_40{font-size:0.42rem;}
+    .fs_50{font-size:0.52rem;}
 }
+
